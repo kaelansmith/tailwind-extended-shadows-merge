@@ -1,80 +1,20 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.withExtendedShadows = void 0;
-const tailwind_merge_1 = require("tailwind-merge");
-const withExtendedShadows = (prevConfig) => {
-    return (0, tailwind_merge_1.mergeConfigs)(prevConfig, {
-        extend: {
-            classGroups: {
-                // x-axis shadow offsets
-                "extendedShadows.offset-x": [
-                    {
-                        "shadow-x": [
-                            "px",
-                            tailwind_merge_1.validators.isNumber,
-                            tailwind_merge_1.validators.isArbitraryLength,
-                        ],
-                    },
-                ],
-                // y-axis shadow offsets
-                "extendedShadows.offset-y": [
-                    {
-                        "shadow-y": [
-                            "px",
-                            tailwind_merge_1.validators.isNumber,
-                            tailwind_merge_1.validators.isArbitraryLength,
-                        ],
-                    },
-                ],
-                // shadow blur
-                "extendedShadows.blur": [
-                    {
-                        "shadow-blur": [
-                            "px",
-                            tailwind_merge_1.validators.isNumber,
-                            tailwind_merge_1.validators.isArbitraryLength,
-                        ],
-                    },
-                ],
-                // shadow spread
-                "extendedShadows.spread": [
-                    {
-                        "shadow-spread": [
-                            "px",
-                            tailwind_merge_1.validators.isNumber,
-                            tailwind_merge_1.validators.isArbitraryLength,
-                        ],
-                    },
-                ],
-                // shadow opacity
-                "extendedShadows.opacity": [
-                    {
-                        "shadow-opacity": [
-                            tailwind_merge_1.validators.isInteger,
-                            tailwind_merge_1.validators.isArbitraryNumber,
-                        ],
-                    },
-                ],
-                // shadows (layers)
-                "extendedShadows.shadows": [
-                    {
-                        shadows: [tailwind_merge_1.validators.isInteger],
-                    },
-                ],
-                // shadows scale multiplier
-                "extendedShadows.shadows-scale": [
-                    {
-                        "shadows-scale": [tailwind_merge_1.validators.isNumber],
-                    },
-                ],
-                // shadows easings
-                "extendedShadows.shadows-ease": [
-                    {
-                        "shadows-ease": ["in", "out"],
-                    },
-                ],
-            },
-        },
-    });
-};
-exports.withExtendedShadows = withExtendedShadows;
+__exportStar(require("./types"), exports);
+var plugin_1 = require("./plugin");
+Object.defineProperty(exports, "withExtendedShadows", { enumerable: true, get: function () { return plugin_1.withExtendedShadows; } });
