@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "tailwindcss": ">=3.0.0",
-    "tailwind-extended-shadows": ">=0.3.2",
+    "tailwind-extended-shadows": ">=0.4.0",
     "tailwind-merge": ">=2.2.0"
   },
   "publishConfig": {
