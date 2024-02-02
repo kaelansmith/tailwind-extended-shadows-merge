@@ -1,4 +1,4 @@
-import { type Config, mergeConfigs, validators } from "tailwind-merge";
+import { Config, mergeConfigs, validators } from "tailwind-merge";
 
 type GroupIds =
   | "extendedShadows.offset-x"
