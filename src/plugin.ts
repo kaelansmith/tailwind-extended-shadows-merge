@@ -1,5 +1,5 @@
-import { Config, mergeConfigs, validators } from "tailwind-merge";
-import { TwExtendedShadowsMergeGroupIds } from "./types";
+import { type Config, mergeConfigs, validators } from "tailwind-merge";
+import type { TwExtendedShadowsMergeGroupIds } from "./types";
 
 export const withExtendedShadows = (
   prevConfig: Config<TwExtendedShadowsMergeGroupIds, string>
