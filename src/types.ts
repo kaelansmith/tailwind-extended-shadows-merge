@@ -6,4 +6,14 @@ export type TwExtendedShadowsMergeGroupIds =
   | "extendedShadows.opacity"
   | "extendedShadows.shadows"
   | "extendedShadows.shadows-scale"
-  | "extendedShadows.shadows-ease";
+  | "extendedShadows.shadows-ease"
+  | "extendedShadows.inset-shadow"
+  | "extendedShadows.inset-shadow-color"
+  | "extendedShadows.inset-offset-x"
+  | "extendedShadows.inset-offset-y"
+  | "extendedShadows.inset-blur"
+  | "extendedShadows.inset-spread"
+  | "extendedShadows.inset-opacity"
+  | "extendedShadows.inset-shadows"
+  | "extendedShadows.inset-shadows-scale"
+  | "extendedShadows.inset-shadows-ease";
