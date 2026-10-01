@@ -10,7 +10,9 @@
     "declarationDir": "dist",
     "strict": false,
     "noEmit": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["node"],
+    "moduleDetection": "auto"
   },
   "include": ["src/**/*"]
 }
