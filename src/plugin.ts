@@ -2,7 +2,7 @@ import { type Config, mergeConfigs, validators } from "tailwind-merge";
 import type { TwExtendedShadowsMergeGroupIds } from "./types";
 
 export const withExtendedShadows = (
-  prevConfig: Config<TwExtendedShadowsMergeGroupIds, string>
+  prevConfig: Config<TwExtendedShadowsMergeGroupIds, string>,
 ): Config<TwExtendedShadowsMergeGroupIds, string> => {
   return mergeConfigs<TwExtendedShadowsMergeGroupIds>(prevConfig, {
     extend: {
